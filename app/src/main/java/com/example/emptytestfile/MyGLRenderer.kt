@@ -10,7 +10,7 @@ class MyGLRenderer : GLSurfaceView.Renderer {
 
     override fun onSurfaceCreated(unused: GL10, config: EGLConfig) {
         // Set the background frame color
-        GLES20.glClearColor((255f/255f), 0.0f, 1.0f, 1.0f)
+        GLES20.glClearColor(1.0f, 1.0f, 0.0f, 1.0f)
     }
 
     override fun onDrawFrame(unused: GL10) {
