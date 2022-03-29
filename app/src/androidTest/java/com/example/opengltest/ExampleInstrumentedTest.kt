@@ -1,4 +1,4 @@
-package com.example.emptytestfile
+package com.example.opengltest
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.emptytestfile
+package com.example.opengltest
 
 import org.junit.Test
 

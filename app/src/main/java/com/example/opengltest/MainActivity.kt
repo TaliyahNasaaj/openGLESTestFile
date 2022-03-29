@@ -1,10 +1,13 @@
-package com.example.emptytestfile
+package com.example.opengltest
 
 import android.app.Activity
 import android.content.Context
 import android.opengl.GLSurfaceView
 import android.os.Bundle
+import android.os.SystemClock.currentThreadTimeMillis
 import android.os.SystemClock.uptimeMillis
+import android.view.MotionEvent
+
 
 class MyGLSurfaceView(context: Context) : GLSurfaceView(context){
     private val renderer: MyGLRenderer
@@ -12,14 +15,15 @@ class MyGLSurfaceView(context: Context) : GLSurfaceView(context){
     init {
         setEGLContextClientVersion(2)
         renderer = MyGLRenderer()
-
         setRenderer(renderer)
     }
+
 }
 
 class MainActivity : Activity() {
-    public var Uptime = uptimeMillis()
-    public lateinit var gLView : GLSurfaceView
+    //Inits a gLView object which extends the GLSurfaceView class
+    lateinit var gLView: GLSurfaceView
+
     public override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
 
